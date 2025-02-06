@@ -65,7 +65,6 @@
 #     print('зрелость')
 # else:
 #     print('старость')
-
 a, b, c = int(input()), int(input()), int(input())
 
 positive_sum = 0
