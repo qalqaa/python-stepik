@@ -118,13 +118,13 @@
 #     print('NO')
 
 
-n = int(input())
-is_lowering = True
-while n > 0:
-    if (n % 10 > n // 10 % 10) and n // 10 != 0:
-        is_lowering = False
-    n = n // 10
-if is_lowering:
-    print('YES')
-else:
-    print('NO')
+# n = int(input())
+# is_lowering = True
+# while n > 0:
+#     if (n % 10 > n // 10 % 10) and n // 10 != 0:
+#         is_lowering = False
+#     n = n // 10
+# if is_lowering:
+#     print('YES')
+# else:
+#     print('NO')
