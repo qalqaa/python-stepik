@@ -29,7 +29,12 @@
 #     if i % 17 == 0 or i % 10 == 9 or (i % 3 == 0 and i % 5 == 0):
 #         print(i)
 
-num = int(input())
+# num = int(input())
+#
+# for i in range(1, 10 + 1):
+#     print(num, 'x', i, '=', num * i)
 
-for i in range(1, 10 + 1):
-    print(num, 'x', i, '=', num * i)
+total = 0
+for i in range(1, 6):
+    total += i
+    print(total, end='')
