@@ -77,7 +77,54 @@
 # else:
 #     print("NO")
 
+# s = input()
+# f_index = s.find('h')
+# l_index = s.rfind('h')
+# print(s[:f_index] + s[l_index + 1:])
+
+# n = int(input())
+# for i in range(n):
+#     s = input()
+#     if s.isspace() or not s:
+#         print(i + 1, ': COMMENT SHOULD BE DELETED', sep='')
+#     else:
+#         print(i + 1, ': ', s, sep='')
+
+
+# s = input()
+#
+# valid_letters = "АВЕКМНОРСТУХ"
+# is_valid = False
+#
+# if (s[0] in valid_letters and
+#         s[1:4].isdigit() and
+#         s[4] in valid_letters and
+#         s[5] in valid_letters and
+#         s[6] == '_' and
+#         s[7:].isdigit()):
+#
+#     if len(s[7:]) in (2, 3):
+#         is_valid = True
+# else:
+#     is_valid = False
+#
+# if is_valid:
+#     print('YES')
+# else:
+#     print('NO')
+
 s = input()
-f_index = s.find('h')
-l_index = s.rfind('h')
-print(s[:f_index] + s[l_index + 1:])
+
+is_valid = False
+if s[0] == "@":
+    if s[1:].isalnum():
+        if s[1:].isdigit():
+            if 5 <= len(s) <= 15:
+                is_valid = True
+        elif s.islower():
+            if 5 <= len(s) <= 15:
+                is_valid = True
+if is_valid:
+    print('Correct')
+else:
+    print('Incorrect')
