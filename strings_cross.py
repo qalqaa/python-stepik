@@ -22,15 +22,15 @@
 # print(s[-2])
 # print(s[:5])
 # print(s[:-2])
-# print(s[::2])
+# print(s[::])
 # print(s[1::2])
 # print(s[::-1])
 # print(s[::-2])
 
-s = input()
-if (len(s) % 2) != 0:
-    print(s[len(s) // 2 + 1:])
-    print(s[:len(s) // 2 + 1], end='')
-else:
-    print(s[len(s) // 2:], end='')
-    print(s[:len(s) // 2])
+# s = input()
+# if (len(s) % 2) != 0:
+#     print(s[len(s) // 2 + 1:])
+#     print(s[:len(s) // 2 + 1], end='')
+# else:
+#     print(s[len(s) // 2:], end='')
+#     print(s[:len(s) // 2])

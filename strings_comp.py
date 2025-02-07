@@ -55,18 +55,18 @@
 # md = md.replace(mn, '')
 # print(mn, md, mx)
 
-n = int(input())
-is_sorted = True
-prev = ''
-for _ in range(n):
-    s = input()
-    cleared_s = s[0:s.find(' ')] + s[s.find(' ', s.rfind('.')) + 1:]
-    if cleared_s > prev:
-        prev = cleared_s
-    else:
-        is_sorted = False
-        break
-if is_sorted:
-    print('YES')
-else:
-    print('NO')
+# n = int(input())
+# is_sorted = True
+# prev = ''
+# for _ in range(n):
+#     s = input()
+#     cleared_s = s[0:s.find(' ')] + s[s.find(' ', s.rfind('.')) + 1:]
+#     if cleared_s > prev:
+#         prev = cleared_s
+#     else:
+#         is_sorted = False
+#         break
+# if is_sorted:
+#     print('YES')
+# else:
+#     print('NO')
